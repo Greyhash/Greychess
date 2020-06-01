@@ -22,7 +22,7 @@ def move(board, f, t):
            board[f_column, f_row] = 0
         
      # if it is a black pawn in row 2 to row 1, then pawn gets promoted to queen
-    if Board.get_peice(board, (f_column, f_row)) == 0 and f_row == 2 and t_row == 1:
+    elif Board.get_peice(board, (f_column, f_row)) == 7 and f_row == 2 and t_row == 1:
            board[t_column, t_row] = 11
            board[f_column, f_row] = 0 
     else:
